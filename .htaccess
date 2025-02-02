@@ -1,0 +1,6 @@
+# Mengarahkan semua permintaan ke index.php (misalnya untuk URL rewriting)
+RewriteEngine On
+RewriteRule ^rooms-single\.php$ rooms-single.php [L]
+
+# Menyembunyikan ekstensi file .php
+RewriteRule ^rooms-single/([0-9]+)/?$ rooms-single.php?id=$1 [L]
